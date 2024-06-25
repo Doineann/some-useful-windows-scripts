@@ -1,0 +1,13 @@
+# ignore everything
+*
+
+# do not ignore files ending with slash (directories)
+!*/
+
+# do not ignore script files
+!*.cmd
+!*.ps1
+
+# do not ignore the README and LICENSE
+!README.md
+!LICENSE
