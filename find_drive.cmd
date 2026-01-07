@@ -2,7 +2,7 @@
 :: Finds the first drive (alphabetical order) with a given volumename and (optional) type.
 ::
  
-:check parameters
+:check_parameters
 if [%1]==[] goto usage
 set drive_volumename=%1
 if [%2]==[] goto find_without_type
@@ -55,7 +55,7 @@ set drive_type=
 exit /b 0
 
 :not-found
-set DRIVE_FOUND=""
+set DRIVE_FOUND=
 set drive_volumename=
 set drive_type=
 exit /b 1
